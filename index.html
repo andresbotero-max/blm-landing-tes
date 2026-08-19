@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BlueMercury Landing Page Test</title>
+  <title>Birds of North America - A Field Guide</title>
   <style>
     * {
       margin: 0;
@@ -12,67 +12,303 @@
     }
     
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #333;
     }
 
-    .header-container {
-      width: 100%;
-      height: 150px;
-      overflow: hidden;
+    header {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 2rem 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
 
-    iframe {
-      width: 100%;
-      height: 150px;
-      border: none;
-      display: block;
-    }
-
-    .content {
+    .header-content {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 40px 20px;
+      padding: 0 20px;
+      text-align: center;
     }
 
     h1 {
+      font-size: 3rem;
+      color: #2c3e50;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: #7f8c8d;
+      font-style: italic;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 20px;
+      color: white;
+    }
+
+    .hero h2 {
       font-size: 2.5rem;
-      margin-bottom: 20px;
-      color: #1c262e;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     }
 
-    p {
-      font-size: 1.1rem;
+    .hero p {
+      font-size: 1.3rem;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.8;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    }
+
+    .birds-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .bird-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .bird-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    }
+
+    .bird-image {
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(45deg, #3498db, #2ecc71);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+    }
+
+    .bird-content {
+      padding: 1.5rem;
+    }
+
+    .bird-card h3 {
+      font-size: 1.5rem;
+      color: #2c3e50;
+      margin-bottom: 0.5rem;
+    }
+
+    .bird-card .scientific-name {
+      font-style: italic;
+      color: #7f8c8d;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .bird-card p {
       line-height: 1.6;
-      color: #666;
-      margin-bottom: 20px;
+      color: #555;
     }
 
-    .cta-button {
-      display: inline-block;
-      background-color: #000;
-      color: #fff;
-      padding: 15px 30px;
-      text-decoration: none;
-      border-radius: 4px;
-      font-weight: 600;
-      margin-top: 20px;
+    .bird-stats {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ecf0f1;
     }
 
-    .cta-button:hover {
-      background-color: #333;
+    .stat {
+      flex: 1;
+      text-align: center;
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      color: #95a5a6;
+      text-transform: uppercase;
+      display: block;
+    }
+
+    .stat-value {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #3498db;
+    }
+
+    footer {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 2rem;
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    footer p {
+      color: #7f8c8d;
     }
   </style>
 </head>
 <body>
-  <div class="header-container">
-    <iframe src="https://bluemercury.com/pages/standalone-header"></iframe>
+  <header>
+    <div class="header-content">
+      <h1>🦅 Birds of North America</h1>
+      <p class="subtitle">An Interactive Field Guide</p>
+    </div>
+  </header>
+
+  <div class="hero">
+    <h2>Discover the Beauty of Our Feathered Friends</h2>
+    <p>Explore the fascinating world of North American birds. From soaring eagles to tiny hummingbirds, each species tells a unique story of adaptation and survival.</p>
   </div>
 
-  <div class="content">
-    <h1>Welcome to BlueMercury</h1>
-    <p>Experience luxury beauty and spa services. Discover premium skincare, makeup, and fragrance from the world's most coveted brands.</p>
-    <p>This is a test landing page demonstrating the standalone header integration.</p>
-    <a href="#" class="cta-button">Shop Now</a>
+  <div class="birds-grid">
+    <div class="bird-card">
+      <div class="bird-image">🦅</div>
+      <div class="bird-content">
+        <h3>Bald Eagle</h3>
+        <p class="scientific-name">Haliaeetus leucocephalus</p>
+        <p>The majestic national bird of the United States, known for its striking white head and powerful build. These raptors are formidable hunters and skilled fishermen.</p>
+        <div class="bird-stats">
+          <div class="stat">
+            <span class="stat-label">Wingspan</span>
+            <span class="stat-value">6-7 ft</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Weight</span>
+            <span class="stat-value">10-14 lbs</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Lifespan</span>
+            <span class="stat-value">20-30 yrs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bird-card">
+      <div class="bird-image" style="background: linear-gradient(45deg, #e74c3c, #f39c12);">🦜</div>
+      <div class="bird-content">
+        <h3>Northern Cardinal</h3>
+        <p class="scientific-name">Cardinalis cardinalis</p>
+        <p>Vibrant red songbird beloved across eastern North America. Males sport brilliant crimson plumage while females wear warm brown tones with red highlights.</p>
+        <div class="bird-stats">
+          <div class="stat">
+            <span class="stat-label">Wingspan</span>
+            <span class="stat-value">10-12 in</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Weight</span>
+            <span class="stat-value">1.5 oz</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Lifespan</span>
+            <span class="stat-value">3-15 yrs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bird-card">
+      <div class="bird-image" style="background: linear-gradient(45deg, #9b59b6, #e91e63);">🐦</div>
+      <div class="bird-content">
+        <h3>Ruby-throated Hummingbird</h3>
+        <p class="scientific-name">Archilochus colubris</p>
+        <p>Tiny aerial acrobat with iridescent green plumage and a brilliant ruby-red throat. Can beat its wings up to 80 times per second and hover in mid-air.</p>
+        <div class="bird-stats">
+          <div class="stat">
+            <span class="stat-label">Wingspan</span>
+            <span class="stat-value">3-4 in</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Weight</span>
+            <span class="stat-value">0.1 oz</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Lifespan</span>
+            <span class="stat-value">3-5 yrs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bird-card">
+      <div class="bird-image" style="background: linear-gradient(45deg, #34495e, #95a5a6);">🦉</div>
+      <div class="bird-content">
+        <h3>Great Horned Owl</h3>
+        <p class="scientific-name">Bubo virginianus</p>
+        <p>Powerful nocturnal predator with distinctive ear tufts and piercing yellow eyes. Known for its deep hooting call that echoes through forests at night.</p>
+        <div class="bird-stats">
+          <div class="stat">
+            <span class="stat-label">Wingspan</span>
+            <span class="stat-value">3-5 ft</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Weight</span>
+            <span class="stat-value">3-4 lbs</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Lifespan</span>
+            <span class="stat-value">13-28 yrs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bird-card">
+      <div class="bird-image" style="background: linear-gradient(45deg, #1abc9c, #16a085);">🦆</div>
+      <div class="bird-content">
+        <h3>Mallard Duck</h3>
+        <p class="scientific-name">Anas platyrhynchos</p>
+        <p>Common and widespread dabbling duck. Males feature glossy green heads and yellow bills, while females display mottled brown plumage perfect for camouflage.</p>
+        <div class="bird-stats">
+          <div class="stat">
+            <span class="stat-label">Wingspan</span>
+            <span class="stat-value">32-37 in</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Weight</span>
+            <span class="stat-value">2-3 lbs</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Lifespan</span>
+            <span class="stat-value">5-10 yrs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bird-card">
+      <div class="bird-image" style="background: linear-gradient(45deg, #e67e22, #d35400);">🕊️</div>
+      <div class="bird-content">
+        <h3>American Robin</h3>
+        <p class="scientific-name">Turdus migratorius</p>
+        <p>Beloved harbinger of spring with its cheerful song and orange-red breast. Often seen hopping across lawns in search of earthworms and insects.</p>
+        <div class="bird-stats">
+          <div class="stat">
+            <span class="stat-label">Wingspan</span>
+            <span class="stat-value">12-16 in</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Weight</span>
+            <span class="stat-value">2.7 oz</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Lifespan</span>
+            <span class="stat-value">2-6 yrs</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <footer>
+    <p>🦅 Birds of North America Field Guide © 2026 | All bird emojis for educational purposes</p>
+  </footer>
 </body>
 </html>
