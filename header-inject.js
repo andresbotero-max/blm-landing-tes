@@ -1,7 +1,7 @@
 async function injectBlueMercuryHeader() {
   try {
-    // Use CORS proxy to fetch the header
-    const proxyUrl = 'https://api.allorigins.win/raw?url=';
+    // Use corsproxy.io to bypass CORS
+    const proxyUrl = 'https://corsproxy.io/?';
     const targetUrl = 'https://bluemercury.com/pages/standalone-header';
     
     console.log('Fetching BlueMercury header...');
@@ -25,7 +25,7 @@ async function injectBlueMercuryHeader() {
       document.body.insertBefore(headerClone, document.body.firstChild);
       document.body.insertBefore(topBarClone, document.body.firstChild);
       
-      console.log('BlueMercury header injected successfully!');
+      console.log('✅ BlueMercury header injected successfully!');
       
       // Also inject the necessary CSS and JS
       const styles = doc.querySelectorAll('style, link[rel="stylesheet"]');
@@ -44,13 +44,14 @@ async function injectBlueMercuryHeader() {
       });
       
     } else {
-      console.error('Could not find header elements. Found:', {
+      console.error('❌ Could not find header elements. Found:', {
         topBarGroup: !!topBarGroup,
         headerSection: !!headerSection
       });
+      console.log('Available sections:', doc.querySelectorAll('[class*="shopify"]'));
     }
   } catch (error) {
-    console.error('Error injecting header:', error);
+    console.error('❌ Error injecting header:', error);
   }
 }
 
