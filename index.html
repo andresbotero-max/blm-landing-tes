@@ -153,6 +153,16 @@
       color: #7f8c8d;
     }
   </style>
+  
+  <!-- BlueMercury Header Styles -->
+  <link rel="stylesheet" href="https://bluemercury.com/assets/global.output.css">
+  <link rel="stylesheet" href="https://bluemercury.com/assets/global.async.output.css">
+  
+  <!-- Shoelace Web Components -->
+  <script type="module">
+    import { setBasePath } from 'https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/utilities/base-path.js';
+    setBasePath('https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/');
+  </script>
 </head>
 <body>
   <header>
@@ -311,6 +321,14 @@
     <p>🦅 Birds of North America Field Guide © 2026 | All bird emojis for educational purposes</p>
   </footer>
 
-  <script src="inject-header.js"></script>
+  <script>
+    fetch('header.html')
+      .then(r => r.text())
+      .then(html => {
+        const div = document.createElement('div');
+        div.innerHTML = html;
+        document.body.insertBefore(div.firstChild, document.body.firstChild);
+      });
+  </script>
 </body>
 </html>
