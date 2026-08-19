@@ -1,61 +1,69 @@
 async function injectBlueMercuryHeader() {
-  try {
-    // Use corsproxy.io to bypass CORS
-    const proxyUrl = 'https://corsproxy.io/?';
-    const targetUrl = 'https://bluemercury.com/pages/standalone-header';
-    
-    console.log('Fetching BlueMercury header...');
-    const response = await fetch(proxyUrl + encodeURIComponent(targetUrl));
-    const html = await response.text();
-    
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(html, 'text/html');
-    
-    // Get the top bar group
-    const topBarGroup = doc.querySelector('.shopify-section.shopify-section-group-top-bar-group');
-    
-    // Get the header section
-    const headerSection = doc.querySelector('.section-header');
-    
-    if (topBarGroup && headerSection) {
-      // Clone and insert at the beginning of body
-      const topBarClone = topBarGroup.cloneNode(true);
-      const headerClone = headerSection.cloneNode(true);
+  const targetUrl = 'https://bluemercury.com/pages/standalone-header';
+  
+  // Try multiple CORS proxies as fallbacks
+  const proxies = [
+    'https://corsproxy.io/?',
+    'https://api.allorigins.win/raw?url=',
+    'https://cors-anywhere.herokuapp.com/',
+  ];
+  
+  for (const proxyUrl of proxies) {
+    try {
+      console.log(`Trying proxy: ${proxyUrl}...`);
+      const response = await fetch(proxyUrl + encodeURIComponent(targetUrl));
       
-      document.body.insertBefore(headerClone, document.body.firstChild);
-      document.body.insertBefore(topBarClone, document.body.firstChild);
+      if (!response.ok) {
+        console.warn(`Proxy failed with status ${response.status}`);
+        continue;
+      }
       
-      console.log('✅ BlueMercury header injected successfully!');
+      const html = await response.text();
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
       
-      // Also inject the necessary CSS and JS
-      const styles = doc.querySelectorAll('style, link[rel="stylesheet"]');
-      const scripts = doc.querySelectorAll('script[src]');
+      // Get the sections
+      const topBarGroup = doc.querySelector('.shopify-section.shopify-section-group-top-bar-group');
+      const headerSection = doc.querySelector('.section-header');
       
-      styles.forEach(style => {
-        const clone = style.cloneNode(true);
-        document.head.appendChild(clone);
-      });
-      
-      scripts.forEach(script => {
-        const clone = document.createElement('script');
-        if (script.src) clone.src = script.src;
-        if (script.textContent) clone.textContent = script.textContent;
-        document.body.appendChild(clone);
-      });
-      
-    } else {
-      console.error('❌ Could not find header elements. Found:', {
-        topBarGroup: !!topBarGroup,
-        headerSection: !!headerSection
-      });
-      console.log('Available sections:', doc.querySelectorAll('[class*="shopify"]'));
+      if (topBarGroup && headerSection) {
+        // Clone and inject
+        const topBarClone = topBarGroup.cloneNode(true);
+        const headerClone = headerSection.cloneNode(true);
+        
+        document.body.insertBefore(headerClone, document.body.firstChild);
+        document.body.insertBefore(topBarClone, document.body.firstChild);
+        
+        console.log('✅ BlueMercury header injected successfully!');
+        
+        // Inject CSS and JS
+        const styles = doc.querySelectorAll('style, link[rel="stylesheet"]');
+        const scripts = doc.querySelectorAll('script[src]');
+        
+        styles.forEach(style => {
+          const clone = style.cloneNode(true);
+          document.head.appendChild(clone);
+        });
+        
+        scripts.forEach(script => {
+          const clone = document.createElement('script');
+          if (script.src) clone.src = script.src;
+          document.body.appendChild(clone);
+        });
+        
+        return; // Success, exit
+      } else {
+        console.error('Header elements not found in response');
+      }
+    } catch (error) {
+      console.warn(`Proxy ${proxyUrl} failed:`, error.message);
+      continue;
     }
-  } catch (error) {
-    console.error('❌ Error injecting header:', error);
   }
+  
+  console.error('❌ All proxies failed');
 }
 
-// Run when DOM is ready
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', injectBlueMercuryHeader);
 } else {
