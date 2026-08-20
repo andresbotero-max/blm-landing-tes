@@ -1,60 +1,14 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
+  <head><meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Birds of North America</title>
-    
-
-
-<script>
-var Shopify = Shopify || {};
-Shopify.theme = {"name":"","id":0,"schema_name":null,"schema_version":null,"theme_store_id":null,"role":"unpublished"};
-</script>
-
-
-
-
-<script id="shop-js-analytics" type="application/json">{"pageType":"index"}</script>
-<script defer="defer" async type="module" src="https://bluemercury.com/cdn/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js"></script>
-<script type="module">
-  await import("https://bluemercury.com/cdn/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js");
-
-  window.Shopify.SignInWithShop?.initShopCartSync?.({"fedCMEnabled":true,"windoidEnabled":true});
-
-</script>
-<script>
-  window.Shopify = window.Shopify || {};
-  if (!window.Shopify.featureAssets) window.Shopify.featureAssets = {};
-  window.Shopify.featureAssets['shop-js'] = {"shop-toast-manager":["modules/v2/loader.shop-toast-manager.en.esm.js"],"init-shop-user-recognition":["modules/v2/loader.init-shop-user-recognition.en.esm.js"],"shop-cash-offers":["modules/v2/loader.shop-cash-offers.en.esm.js"],"shop-button":["modules/v2/loader.shop-button.en.esm.js"],"listener":["modules/v2/loader.listener.en.esm.js"],"checkout-modal":["modules/v2/loader.checkout-modal.en.esm.js"],"avatar":["modules/v2/loader.avatar.en.esm.js"],"init-windoid":["modules/v2/loader.init-windoid.en.esm.js"],"init-shop-email-lookup-coordinator":["modules/v2/loader.init-shop-email-lookup-coordinator.en.esm.js"],"init-shop-cart-sync":["modules/v2/loader.init-shop-cart-sync.en.esm.js"],"init-fed-cm":["modules/v2/loader.init-fed-cm.en.esm.js"],"shop-login-button":["modules/v2/loader.shop-login-button.en.esm.js"],"shop-user-recognition":["modules/v2/loader.shop-user-recognition.en.esm.js"],"pay-button":["modules/v2/loader.pay-button.en.esm.js"],"init-shop-for-new-customer-accounts":["modules/v2/loader.init-shop-for-new-customer-accounts.en.esm.js"],"init-customer-accounts-sign-up":["modules/v2/loader.init-customer-accounts-sign-up.en.esm.js"],"shop-login":["modules/v2/loader.shop-login.en.esm.js"],"shop-cart-sync":["modules/v2/loader.shop-cart-sync.en.esm.js"],"init-customer-accounts":["modules/v2/loader.init-customer-accounts.en.esm.js"],"shop-follow-button":["modules/v2/loader.shop-follow-button.en.esm.js"],"lead-capture":["modules/v2/loader.lead-capture.en.esm.js"],"payment-terms":["modules/v2/loader.payment-terms.en.esm.js"]};
-</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0"><title>Birds of North America</title>
+<!-- Shopify scripts removed -->
 <!-- Third-party scripts (Gorgias chat, etc.) removed -->
-<script id="hot-reload-client" src="https://bluemercury.com/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js" defer crossorigin></script>
-<script id="__st">var __st={"a":28301852747,"offset":-14400,"reqid":"3391101c-8fb5-4530-baa3-f92a35a6ada6-1787244079","pageurl":"bluemercury.com\/","t":"prospect","u":"da47adfbbf25","p":"home"};</script>
-<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
-<script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.2.iife.js',D={infoText:'Protected by hCaptcha',privacyText:'Privacy',termsText:'Terms'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!1,!0)}();</script>
-<script integrity="sha256-JjoPp5ZfB1sSAs5SQaol1x1GgvveM+BgmRzyDexInEQ=" data-source-attribution="shopify.loadfeatures" defer="defer" src="https://bluemercury.com/cdn/shopifycloud/storefront/assets/storefront/load_feature-1bd60354.js" crossorigin="anonymous"></script>
-<script>(function () {var userAgent = navigator.userAgent;var platform = navigator.platform;var maxTouchPoints = navigator.maxTouchPoints || 0;var isIOS = /iPad|iPhone|iPod/.test(platform) || (platform === 'MacIntel' && maxTouchPoints > 1);var isMacSafari = platform.indexOf('Mac') === 0 && /Safari/.test(userAgent) && !/Chrome|Chromium|CriOS|FxiOS|Edg|OPR|Android/.test(userAgent);var isAppleSafari = isIOS || isMacSafari;if (isAppleSafari) {fetch('/sf_private_access_tokens' + location.search).catch(function () {});}function browserMajorVersion(pattern) {var match = userAgent.match(pattern);return match ? parseInt(match[1], 10) : null;}function shouldLoadAutosizesPolyfill() {if (!window.PerformanceObserver?.supportedEntryTypes?.includes('paint')) {return false;}var chromeVersion = browserMajorVersion(/Chrome\/(\d+)/);if (chromeVersion !== null) {return chromeVersion < 126;}var firefoxVersion = browserMajorVersion(/Firefox\/(\d+)/);if (firefoxVersion !== null) {return firefoxVersion < 150;}var safariVersion = isAppleSafari ? browserMajorVersion(/Version\/(\d+).*Safari\//) : null;if (safariVersion !== null) {return safariVersion < 27;}return true;}if (shouldLoadAutosizesPolyfill()) {var autosizesScript = document.createElement('script');autosizesScript.async = true;autosizesScript.crossOrigin = 'anonymous';autosizesScript.src = "https://bluemercury.com/cdn/shopifycloud/storefront/assets/storefront/autosizes-84416378.js";(document.head || document.documentElement).appendChild(autosizesScript);}window.ShopifyAnalytics = window.ShopifyAnalytics || {};window.ShopifyAnalytics.performance = window.ShopifyAnalytics.performance || {};(function () {var LONG_FRAME_THRESHOLD = 50;var longAnimationFrames = [];var activeRafId = null;function collectLongFrames() {var previousTime = null;function rafMonitor(now) {if (activeRafId === null) {return;}var delta = now - previousTime;if (delta > LONG_FRAME_THRESHOLD) {longAnimationFrames.push({startTime: previousTime,endTime: now,});}previousTime = now;activeRafId = requestAnimationFrame(rafMonitor);}previousTime = performance.now();activeRafId = requestAnimationFrame(rafMonitor);}if (!window.PerformanceObserver?.supportedEntryTypes?.includes('long-animation-frame')) {collectLongFrames();var timeoutId = setTimeout(function () {cancelAnimationFrame(activeRafId);}, 10000);window.ShopifyAnalytics.performance.getLongAnimationFrames = function (stopCollection) {if (stopCollection === undefined) {stopCollection = false;}if (stopCollection) {clearTimeout(timeoutId);cancelAnimationFrame(activeRafId);}return longAnimationFrames;};}})();})();</script><script id="shopify-origin-trials" async="async" integrity="sha256-mqQjA+yhr1DtPsW5MhDIq3zDu+LghfjNT49r/ttG3eY=" src="https://cdn.shopify.com/shopifycloud/storefront/assets/storefront/origin_trials-5059b83f.js" crossorigin="anonymous" onload="window.__shopifyOriginTrialsDone = true" onerror="window.__shopifyOriginTrialsDone = true"></script>
-<script>
-  window.Shopify = window.Shopify || {};
-  window.Shopify.MCP = window.Shopify.MCP || {};
-  window.Shopify.MCP.enabled = true;
-  window.Shopify.MCP.shop = "bluemercury-inc.myshopify.com";
-  window.Shopify.MCP.mcpEndpoint = "https:\/\/bluemercury.com\/api\/mcp";
-  window.Shopify.MCP.tools = [{"name":"search_shop_policies_and_faqs","description":"Used to get facts about the stores policies, products, or services.\nSome examples of questions you can ask are:\n  - What is your return policy?\n  - What is your shipping policy?\n  - What is your phone number?\n  - What are your hours of operation?\"\n","inputSchema":{"$schema":"https:\/\/json-schema.org\/draft\/2020-12\/schema","type":"object","properties":{"query":{"type":"string","description":"A natural language query."},"context":{"type":"string","description":"Additional information about the request such as user demographics, mood, location, or other relevant details that could help in tailoring the response appropriately."}},"required":["query"]}}];
-</script>
-<script>(()=>{var d="shopify:webmcp_adapter_loaded",n=Symbol.for("shopify.webmcp_adapter_loading");function s(c,a,{win:r=window,doc:o=document}={}){function p(){try{return r.localStorage.getItem(d)==="true"}catch{return!1}}function l(){try{r.localStorage.setItem(d,"true")}catch{}}function u(){return typeof(o.modelContext||r.navigator?.modelContext)?.registerTool=="function"}function f(){if(r[n]||!u())return;let t=o.head||o.getElementsByTagName("head")[0];if(!t)return;let e=o.createElement("script");e.type="module",e.crossOrigin="anonymous",a&&(e.integrity=a),e.src=c,e.addEventListener("load",l,{once:!0}),e.addEventListener("error",()=>{r[n]=!1},{once:!0}),t.appendChild(e),r[n]=!0}function _(t){let e=o.getElementById("shopify-origin-trials");if(!e||r.__shopifyOriginTrialsDone){t();return}e.addEventListener("load",t,{once:!0}),e.addEventListener("error",t,{once:!0})}function i(){_(()=>r.setTimeout(f,0))}function m(){o.addEventListener("DOMContentLoaded",i,{once:!0})}p()?i():m()}s("https:\/\/cdn.shopify.com\/storefront\/webmcp\/webmcp-0.1.1.js","");})();
-</script>
-<script data-source-attribution="shopify.dynamic_checkout.dynamic.init">var Shopify=Shopify||{};Shopify.PaymentButton=Shopify.PaymentButton||{isStorefrontPortableWallets:!0,init:function(){window.Shopify.PaymentButton.init=function(){};var t=document.createElement("script");t.src="https:https://bluemercury.com/cdn/shopifycloud/portable-wallets/latest/portable-wallets.en.js",t.type="module",document.head.appendChild(t)}};
-</script>
-
-
-<script data-source-attribution="shopify.dynamic_checkout.buyer_consent">
-  function portableWalletsHideBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.add("hidden"),t.setAttribute("aria-hidden","true"),n.removeEventListener("click",e))}function portableWalletsShowBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.remove("hidden"),t.removeAttribute("aria-hidden"),n.addEventListener("click",e))}window.Shopify?.PaymentButton&&(window.Shopify.PaymentButton.hideBuyerConsent=portableWalletsHideBuyerConsent,window.Shopify.PaymentButton.showBuyerConsent=portableWalletsShowBuyerConsent);
-</script>
-<script data-source-attribution="shopify.dynamic_checkout.cart.bootstrap">document.addEventListener("DOMContentLoaded",(function(){function t(){return document.querySelector("shopify-accelerated-checkout-cart, shopify-accelerated-checkout")}if(t())Shopify.PaymentButton.init();else{new MutationObserver((function(e,n){t()&&(Shopify.PaymentButton.init(),n.disconnect())})).observe(document.body,{childList:!0,subtree:!0})}}));
-</script>
+<!-- Shopify scripts removed -->
+<!-- MCP scripts removed -->
+<!-- Payment scripts removed -->
 <!-- Preview bar removed -->
 <script id="OnlineStorePreviewBarNextData-removed" type="application/json">{"activeMarketCountries":[{"code":"US","name":"United States"}],"allCountries":[{"code":"AF","name":"Afghanistan"},{"code":"AX","name":"Åland Islands"},{"code":"AL","name":"Albania"},{"code":"DZ","name":"Algeria"},{"code":"AD","name":"Andorra"},{"code":"AO","name":"Angola"},{"code":"AI","name":"Anguilla"},{"code":"AG","name":"Antigua \u0026 Barbuda"},{"code":"AR","name":"Argentina"},{"code":"AM","name":"Armenia"},{"code":"AW","name":"Aruba"},{"code":"AC","name":"Ascension Island"},{"code":"AU","name":"Australia"},{"code":"AT","name":"Austria"},{"code":"AZ","name":"Azerbaijan"},{"code":"BS","name":"Bahamas"},{"code":"BH","name":"Bahrain"},{"code":"BD","name":"Bangladesh"},{"code":"BB","name":"Barbados"},{"code":"BY","name":"Belarus"},{"code":"BE","name":"Belgium"},{"code":"BZ","name":"Belize"},{"code":"BJ","name":"Benin"},{"code":"BM","name":"Bermuda"},{"code":"BT","name":"Bhutan"},{"code":"BO","name":"Bolivia"},{"code":"BA","name":"Bosnia \u0026 Herzegovina"},{"code":"BW","name":"Botswana"},{"code":"BR","name":"Brazil"},{"code":"IO","name":"British Indian Ocean Territory"},{"code":"VG","name":"British Virgin Islands"},{"code":"BN","name":"Brunei"},{"code":"BG","name":"Bulgaria"},{"code":"BF","name":"Burkina Faso"},{"code":"BI","name":"Burundi"},{"code":"KH","name":"Cambodia"},{"code":"CM","name":"Cameroon"},{"code":"CA","name":"Canada"},{"code":"CV","name":"Cape Verde"},{"code":"BQ","name":"Caribbean Netherlands"},{"code":"KY","name":"Cayman Islands"},{"code":"CF","name":"Central African Republic"},{"code":"TD","name":"Chad"},{"code":"CL","name":"Chile"},{"code":"CN","name":"China"},{"code":"CX","name":"Christmas Island"},{"code":"CC","name":"Cocos (Keeling) Islands"},{"code":"CO","name":"Colombia"},{"code":"KM","name":"Comoros"},{"code":"CG","name":"Congo - Brazzaville"},{"code":"CD","name":"Congo - Kinshasa"},{"code":"CK","name":"Cook Islands"},{"code":"CR","name":"Costa Rica"},{"code":"CI","name":"Côte d’Ivoire"},{"code":"HR","name":"Croatia"},{"code":"CW","name":"Curaçao"},{"code":"CY","name":"Cyprus"},{"code":"CZ","name":"Czechia"},{"code":"DK","name":"Denmark"},{"code":"DJ","name":"Djibouti"},{"code":"DM","name":"Dominica"},{"code":"DO","name":"Dominican Republic"},{"code":"EC","name":"Ecuador"},{"code":"EG","name":"Egypt"},{"code":"SV","name":"El Salvador"},{"code":"GQ","name":"Equatorial Guinea"},{"code":"ER","name":"Eritrea"},{"code":"EE","name":"Estonia"},{"code":"SZ","name":"Eswatini"},{"code":"ET","name":"Ethiopia"},{"code":"FK","name":"Falkland Islands"},{"code":"FO","name":"Faroe Islands"},{"code":"FJ","name":"Fiji"},{"code":"FI","name":"Finland"},{"code":"FR","name":"France"},{"code":"GF","name":"French Guiana"},{"code":"PF","name":"French Polynesia"},{"code":"TF","name":"French Southern Territories"},{"code":"GA","name":"Gabon"},{"code":"GM","name":"Gambia"},{"code":"GE","name":"Georgia"},{"code":"DE","name":"Germany"},{"code":"GH","name":"Ghana"},{"code":"GI","name":"Gibraltar"},{"code":"GR","name":"Greece"},{"code":"GL","name":"Greenland"},{"code":"GD","name":"Grenada"},{"code":"GP","name":"Guadeloupe"},{"code":"GT","name":"Guatemala"},{"code":"GG","name":"Guernsey"},{"code":"GN","name":"Guinea"},{"code":"GW","name":"Guinea-Bissau"},{"code":"GY","name":"Guyana"},{"code":"HT","name":"Haiti"},{"code":"HN","name":"Honduras"},{"code":"HK","name":"Hong Kong SAR"},{"code":"HU","name":"Hungary"},{"code":"IS","name":"Iceland"},{"code":"IN","name":"India"},{"code":"ID","name":"Indonesia"},{"code":"IQ","name":"Iraq"},{"code":"IE","name":"Ireland"},{"code":"IM","name":"Isle of Man"},{"code":"IL","name":"Israel"},{"code":"IT","name":"Italy"},{"code":"JM","name":"Jamaica"},{"code":"JP","name":"Japan"},{"code":"JE","name":"Jersey"},{"code":"JO","name":"Jordan"},{"code":"KZ","name":"Kazakhstan"},{"code":"KE","name":"Kenya"},{"code":"KI","name":"Kiribati"},{"code":"XK","name":"Kosovo"},{"code":"KW","name":"Kuwait"},{"code":"KG","name":"Kyrgyzstan"},{"code":"LA","name":"Laos"},{"code":"LV","name":"Latvia"},{"code":"LB","name":"Lebanon"},{"code":"LS","name":"Lesotho"},{"code":"LR","name":"Liberia"},{"code":"LY","name":"Libya"},{"code":"LI","name":"Liechtenstein"},{"code":"LT","name":"Lithuania"},{"code":"LU","name":"Luxembourg"},{"code":"MO","name":"Macao SAR"},{"code":"MG","name":"Madagascar"},{"code":"MW","name":"Malawi"},{"code":"MY","name":"Malaysia"},{"code":"MV","name":"Maldives"},{"code":"ML","name":"Mali"},{"code":"MT","name":"Malta"},{"code":"MQ","name":"Martinique"},{"code":"MR","name":"Mauritania"},{"code":"MU","name":"Mauritius"},{"code":"YT","name":"Mayotte"},{"code":"MX","name":"Mexico"},{"code":"MD","name":"Moldova"},{"code":"MC","name":"Monaco"},{"code":"MN","name":"Mongolia"},{"code":"ME","name":"Montenegro"},{"code":"MS","name":"Montserrat"},{"code":"MA","name":"Morocco"},{"code":"MZ","name":"Mozambique"},{"code":"MM","name":"Myanmar (Burma)"},{"code":"NA","name":"Namibia"},{"code":"NR","name":"Nauru"},{"code":"NP","name":"Nepal"},{"code":"NL","name":"Netherlands"},{"code":"NC","name":"New Caledonia"},{"code":"NZ","name":"New Zealand"},{"code":"NI","name":"Nicaragua"},{"code":"NE","name":"Niger"},{"code":"NG","name":"Nigeria"},{"code":"NU","name":"Niue"},{"code":"NF","name":"Norfolk Island"},{"code":"MK","name":"North Macedonia"},{"code":"NO","name":"Norway"},{"code":"OM","name":"Oman"},{"code":"PK","name":"Pakistan"},{"code":"PS","name":"Palestinian Territories"},{"code":"PA","name":"Panama"},{"code":"PG","name":"Papua New Guinea"},{"code":"PY","name":"Paraguay"},{"code":"PE","name":"Peru"},{"code":"PH","name":"Philippines"},{"code":"PN","name":"Pitcairn Islands"},{"code":"PL","name":"Poland"},{"code":"PT","name":"Portugal"},{"code":"QA","name":"Qatar"},{"code":"RE","name":"Réunion"},{"code":"RO","name":"Romania"},{"code":"RU","name":"Russia"},{"code":"RW","name":"Rwanda"},{"code":"WS","name":"Samoa"},{"code":"SM","name":"San Marino"},{"code":"ST","name":"São Tomé \u0026 Príncipe"},{"code":"SA","name":"Saudi Arabia"},{"code":"SN","name":"Senegal"},{"code":"RS","name":"Serbia"},{"code":"SC","name":"Seychelles"},{"code":"SL","name":"Sierra Leone"},{"code":"SG","name":"Singapore"},{"code":"SX","name":"Sint Maarten"},{"code":"SK","name":"Slovakia"},{"code":"SI","name":"Slovenia"},{"code":"SB","name":"Solomon Islands"},{"code":"SO","name":"Somalia"},{"code":"ZA","name":"South Africa"},{"code":"GS","name":"South Georgia \u0026 South Sandwich Islands"},{"code":"KR","name":"South Korea"},{"code":"SS","name":"South Sudan"},{"code":"ES","name":"Spain"},{"code":"LK","name":"Sri Lanka"},{"code":"BL","name":"St. Barthélemy"},{"code":"SH","name":"St. Helena"},{"code":"KN","name":"St. Kitts \u0026 Nevis"},{"code":"LC","name":"St. Lucia"},{"code":"MF","name":"St. Martin"},{"code":"PM","name":"St. Pierre \u0026 Miquelon"},{"code":"VC","name":"St. Vincent \u0026 Grenadines"},{"code":"SD","name":"Sudan"},{"code":"SR","name":"Suriname"},{"code":"SJ","name":"Svalbard \u0026 Jan Mayen"},{"code":"SE","name":"Sweden"},{"code":"CH","name":"Switzerland"},{"code":"TW","name":"Taiwan"},{"code":"TJ","name":"Tajikistan"},{"code":"TZ","name":"Tanzania"},{"code":"TH","name":"Thailand"},{"code":"TL","name":"Timor-Leste"},{"code":"TG","name":"Togo"},{"code":"TK","name":"Tokelau"},{"code":"TO","name":"Tonga"},{"code":"TT","name":"Trinidad \u0026 Tobago"},{"code":"TA","name":"Tristan da Cunha"},{"code":"TN","name":"Tunisia"},{"code":"TR","name":"Türkiye"},{"code":"TM","name":"Turkmenistan"},{"code":"TC","name":"Turks \u0026 Caicos Islands"},{"code":"TV","name":"Tuvalu"},{"code":"UM","name":"U.S. Outlying Islands"},{"code":"UG","name":"Uganda"},{"code":"UA","name":"Ukraine"},{"code":"AE","name":"United Arab Emirates"},{"code":"GB","name":"United Kingdom"},{"code":"US","name":"United States"},{"code":"UY","name":"Uruguay"},{"code":"UZ","name":"Uzbekistan"},{"code":"VU","name":"Vanuatu"},{"code":"VA","name":"Vatican City"},{"code":"VE","name":"Venezuela"},{"code":"VN","name":"Vietnam"},{"code":"WF","name":"Wallis \u0026 Futuna"},{"code":"EH","name":"Western Sahara"},{"code":"YE","name":"Yemen"},{"code":"ZM","name":"Zambia"},{"code":"ZW","name":"Zimbabwe"}],"fallbackCountryCode":"US","locales":[{"locale":"en","name":"English","published":true,"url":"\/"}],"currentLocaleRootUrl":"\/","previewAttributes":{"showCompanyLocations":true,"showLanguages":true,"showMarkets":true,"userLocale":"en"},"shop":{"id":28301852747,"isPasswordEnabled":false,"b2bRestricted":false,"primaryLocale":"en","domain":"bluemercury-inc.myshopify.com"},"theme":{"id":130530213963,"isDraft":true,"name":"[BA] - DEV Andres","sharingAccessToken":"xdfcmg57tvjnwv5v"},"pageSpecificData":{"resource":null},"localizationData":{"currentLocale":"en","currentMarket":{"primary":false,"supportsShopPrimaryLocale":true,"marketId":153780299,"marketHandle":"us"}},"customerTags":{},"betas":{"cc7bff1c":false}}</script><link id="shopify-accelerated-checkout-styles" rel="stylesheet" media="screen" href="https:https://bluemercury.com/cdn/shopifycloud/portable-wallets/latest/accelerated-checkout-backwards-compat.css" crossorigin="anonymous">
 <style id="shopify-accelerated-checkout-cart">
@@ -165,21 +119,368 @@ Shopify.theme = {"name":"","id":0,"schema_name":null,"schema_version":null,"them
 </style><link type="text/css" href="https://bluemercury.com/cdn/shop/t/1356/assets/global.output.css?v=111883151050051283661787067061" rel="stylesheet"><link href="https://bluemercury.com/cdn/shop/t/1356/assets/juanaforbluemercury-lt.woff2?v=78372994917038182471742356578" as="font" crossorigin="anonymous" rel="preload">
 <link href="https://bluemercury.com/cdn/shop/t/1356/assets/neuehaasunicaforblue.woff2?v=111780410613208419811742356578" as="font" crossorigin="anonymous" rel="preload">
 
+<style>
+  @font-face {
+    font-family: 'juana';
+    src: url('https://bluemercury.com/cdn/shop/t/1356/assets/juanaforbluemercury-lt.woff2?v=78372994917038182471742356578') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'juana';
+    src: url('https://bluemercury.com/cdn/shop/t/1356/assets/juanaforbluemercury-ltIt.woff2?v=88344427669045242251742356578') format('woff2');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'neuehaas';
+    src: url('https://bluemercury.com/cdn/shop/t/1356/assets/neuehaasunicaforblue.woff2?v=111780410613208419811742356578') format('woff2');
+    font-weight: 100 600;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'neuehaas';
+    src: url('https://bluemercury.com/cdn/shop/t/1356/assets/neuehaasunicaforblue-bold.woff2?v=65222140812922895541742356578') format('woff2');
+    font-weight: 700 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'neuehaas';
+    src: url('https://bluemercury.com/cdn/shop/t/1356/assets/neuehaasunicaforblue-it.woff2?v=152641275691509470231742356578') format('woff2');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+  }
+</style><style>
+  @font-face {
+    font-family: 'Montserrat Extra Light';
+    src: url("https://bluemercury.com/cdn/fonts/montserrat/montserrat_n2.6158a4b6474a580592572fe30f04d0efe5adcbe8.woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Montserrat Light';
+    src: url("https://bluemercury.com/cdn/fonts/montserrat/montserrat_n3.29e699231893fd243e1620595067294bb067ba2a.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Montserrat Italic';
+    src: url("https://bluemercury.com/cdn/fonts/montserrat/montserrat_i4.5a4ea298b4789e064f62a29aafc18d41f09ae59b.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Montserrat Medium';
+    src: url("https://bluemercury.com/cdn/fonts/montserrat/montserrat_n5.07ef3781d9c78c8b93c98419da7ad4fbeebb6635.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Montserrat Regular';
+    src: url("https://bluemercury.com/cdn/fonts/montserrat/montserrat_n4.81949fa0ac9fd2021e16436151e8eaa539321637.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Montserrat Semi Bold';
+    src: url("https://bluemercury.com/cdn/fonts/montserrat/montserrat_n6.1326b3e84230700ef15b3a29fb520639977513e0.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Open Sans Light Italic';
+    src: url("https://bluemercury.com/cdn/fonts/open_sans/opensans_i3.853ebda1c5f31329bb2a566ea7797548807a48bf.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Playfair Display Regular';
+    src: url("https://bluemercury.com/cdn/fonts/playfair_display/playfairdisplay_n4.9980f3e16959dc89137cc1369bfc3ae98af1deb9.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'QuickBrush';
+    src: url('https://bluemercury.com/cdn/shop/t/1356/assets/Quickbrush.woff2?v=173540097176871837051742356578') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+</style>
+
+
+    <meta name="google" content="nositelinkssearchbox"><meta name="description" content="Bluemercury sells the best in skincare, makeup, hair care, fragrance, bath and body, and more. Buy online or visit your local store today!"><link rel="canonical" href="https:https://bluemercury.com/">
 
 
 
 
 
 
+<link rel="shortcut icon" href="https://bluemercury.com/cdn/shop/files/BLU_LogoMark_MercurialBlue_48x48.png?v=1724332966" type="image/png"><meta property="og:type" content="website">
+  <meta property="og:title" content="Bluemercury | Skincare, Makeup, Hair Care, Fragrance &amp; More"><meta property="og:image" content="http:https://bluemercury.com/cdn/shop/files/blm-checkout-logo_8b2fdaa0-a3b4-431b-8537-c5affc36172b_grande.png?v=1614291927">
+    <meta property="og:image:secure_url" content="https:https://bluemercury.com/cdn/shop/files/blm-checkout-logo_8b2fdaa0-a3b4-431b-8537-c5affc36172b_grande.png?v=1614291927"><meta property="og:description" content="Bluemercury sells the best in skincare, makeup, hair care, fragrance, bath and body, and more. Buy online or visit your local store today!"><meta property="og:url" content="https:https://bluemercury.com/">
+<meta property="og:site_name" content="bluemercury"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Bluemercury | Skincare, Makeup, Hair Care, Fragrance &amp; More">
+  <meta name="twitter:description" content="Bluemercury sells the best in skincare, makeup, hair care, fragrance, bath and body, and more. Buy online or visit your local store today!"><meta name="twitter:image" content="https:https://bluemercury.com/cdn/shop/files/blm-checkout-logo_8b2fdaa0-a3b4-431b-8537-c5affc36172b_600x600_crop_center.png?v=1614291927"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+  "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Translation missing: en.general.breadcrumb.home",
+      "item": "https:https://bluemercury.com"
+    }]
+  }
+  </script><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https:https://bluemercury.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https:https://bluemercury.com/search?q={search_term_string}&type=product"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+</script><!--START Digioh Fast Activation Javascript-->
+    <script async type='text/javascript' src='https://www.lightboxcdn.com/vendor/9e08e90c-d4f8-4d3b-846a-adbe964c8c6e/lightbox_inline.js'></script>
+    <!--END Digioh Fast Activation Javascript-->
+  <!-- BEGIN app block: shopify://apps/nosto/blocks/nosto-script-embed-block/a67c43f0-0fc3-4649-a7dc-65ac499cae31 --><!-- BEGIN app snippet: nosto-shop-id --><script type="application/json" id="nosto-market-tagging">{"shopId":"28301852747","market":"153780299","locale":"en"
+}</script>
+<!-- END app snippet -->
+<script src="https://cdn.shopify.com/extensions/019ffb5e-d1f0-7e0e-a608-737c32aca85b/nosto-personalization-227/assets/market-init.js" async></script>
 
 
-</head>
+<!-- END app block --><script src="https://cdn.shopify.com/extensions/019ff3b0-63b4-757d-9f15-8e46f7432f22/applovin-shop-integration-94/assets/app-embed.js" type="text/javascript" defer="defer"></script>
+<link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
+<script>(function(){if ("sendBeacon" in navigator && "performance" in window) {try {var session_token_from_headers = performance.getEntriesByType('navigation')[0].serverTiming.find(x => x.name == '_s').description;} catch {var session_token_from_headers = undefined;}var session_cookie_matches = document.cookie.match(/_shopify_s=([^;]*)/);var session_token_from_cookie = session_cookie_matches && session_cookie_matches.length === 2 ? session_cookie_matches[1] : "";var session_token = session_token_from_headers || session_token_from_cookie || "";function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 28301852747,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token,page_type: "index"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
+<script>
+  window.__TREKKIE_SHIM_QUEUE = window.__TREKKIE_SHIM_QUEUE || [];
+</script>
+<script>(function(){var wpmLoader=function(){"use strict";var e=/Googlebot|Storebot-Google|bingbot|Baiduspider|YandexBot|DuckDuckBot|Slurp|facebookexternalhit|Twitterbot|LinkedInBot|Applebot|AdsBot-Google|Mediapartners-Google|APIs-Google|PetalBot|SemrushBot|AhrefsBot|MJ12bot|DotBot|Acunetix|PerplexityBot|Perplexity-User/i,r=/bytedance/i;function o(){try{var e=document.cookie;if(!e||"string"!=typeof e)return;for(var r=0,o=e.split(";");r<o.length;r++){var d=o[r],t=d.indexOf("=");if(-1!==t){var n=d.slice(0,t).trim();if(n){var i=void 0;try{i=decodeURIComponent(n)}catch(e){i=n}if("_shopify_s"===i){var a=d.slice(t+1).trim();try{return decodeURIComponent(a)}catch(e){return a}}}}}return}catch(e){return}}function d(e){try{"undefined"!=typeof console&&"function"==typeof console.warn&&console.warn(e)}catch(e){}}return function(t,n,i,a){var s,c,u,l,f=arguments.length>4&&void 0!==arguments[4]?arguments[4]:{},p=(c=(s={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/}).modern,u=s.legacy,(l=navigator.userAgent).match(e)?"bot":l.match(c)?"modern":l.match(u)?"legacy":l.match(r)?"bot":"unknown"),h=function(e){var r=e.version,t=e.browserTarget,n=e.surface,i=e.shopId,a=e.monorailEndpoint,s=window.location.href;return{emit:function(e){var c,u=e.status,l=e.errorMsg;if(!a)return d("[Web Pixels Manager] No Monorail endpoint provided, skipping logging."),!1;try{var f=(new Date).getTime();c=JSON.stringify({metadata:{event_sent_at_ms:f},events:[{schema_id:"web_pixels_manager_load/3.2",payload:{version:r,bundle_target:t,page_url:s,status:u,surface:n,error_msg:l,shop_id:i,visit_token:o()},metadata:{event_created_at_ms:f}}]})}catch(e){return!1}var p,h=!1;try{"function"==typeof window.navigator.sendBeacon&&-1===(p=window.navigator.userAgent).indexOf("iPhone; CPU iPhone OS 12_")&&-1===p.indexOf("iPad; CPU OS 12_")&&-1===p.indexOf("iPod touch; CPU iPhone OS 12_")&&(h=window.navigator.sendBeacon.bind(window.navigator)(a,c))}catch(e){h=!1}if(h)return!0;try{var m=new XMLHttpRequest;return m.open("POST",a,!0),m.setRequestHeader("Content-Type","text/plain"),m.send(c),!0}catch(e){return d("[Web Pixels Manager] Got an unhandled error while logging to Monorail."),!1}}}}({version:i,browserTarget:p,surface:t.surface,shopId:t.shopId,monorailEndpoint:t.monorailEndpoint});if(Boolean(null==(y=null==(m=window.Shopify)?void 0:m.analytics)?void 0:y.replayQueue))h.emit({status:"setup-skipped",errorMsg:"replay queue already initialized."});else{var m,y;h.emit({status:"setup-started"}),window.Shopify=window.Shopify||{};var g=window.Shopify;g.analytics=g.analytics||{};var v=g.analytics;v.replayQueue=[],v.publish=function(e,r,o){return v.replayQueue.push([e,r,o]),!0};try{self.performance.mark("wpm:start")}catch(e){}var w,b="modern"===p?"modern":"legacy",P=(null!=a?a:{modern:"",legacy:""})[b],S=[(w={baseUrl:n,hashVersion:i,buildTarget:b}).baseUrl,"/wpm","/b",w.hashVersion,"modern"===w.buildTarget?"m":"l",".js"].join("");try{f.browserTarget=p,O(function(){try{O(_)}catch(e){h.emit({status:"failed",errorMsg:U(e)})}}),h.emit({status:"loading"})}catch(e){h.emit({status:"failed",errorMsg:U(e)})}}function C(){if(!function(){var e,r;return Boolean(null==(r=null==(e=window.Shopify)?void 0:e.analytics)?void 0:r.initialized)}()){var e=window.webPixelsManager.init(t)||void 0;if(e){var r=window.Shopify.analytics;r.replayQueue.forEach(function(r){var o=r[0],d=r[1],t=r[2];e.publishCustomEvent(o,d,t)}),r.replayQueue=[],r.publish=e.publishCustomEvent,r.visitor=e.visitor,r.initialized=!0}}}function _(){return h.emit({status:"failed",errorMsg:"".concat(S," has failed to load")})}function O(e){var r;!function(e){var r=e.src,o=e.async,d=void 0===o||o,t=e.onload,n=e.onerror,i=e.sri,a=e.scriptDataAttributes,s=void 0===a?{}:a,c=document.createElement("script"),u=document.querySelector("head"),l=document.querySelector("body");if(c.async=d,c.src=r,i&&(c.integrity=i,c.crossOrigin="anonymous"),s)for(var f in s)if(Object.prototype.hasOwnProperty.call(s,f))try{c.dataset[f]=s[f]}catch(e){}if(t&&c.addEventListener("load",t),n&&c.addEventListener("error",n),u)u.appendChild(c);else{if(!l)throw new Error("Did not find a head or body element to append the script");l.appendChild(c)}}({src:S,async:!0,onload:C,onerror:e,sri:(r=P,"string"==typeof r&&/^sha384-[A-Za-z0-9+/=]+$/.test(r)?P:""),scriptDataAttributes:f})}function U(e){return e instanceof Error?e.message:"Unknown error"}}}();wpmLoader({shopId: 28301852747,storefrontBaseUrl: "https:https://bluemercury.com",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",monorailEndpoint: "https:https://bluemercury.com/.well-known/shopify/monorail/unstable/produce_batch",surface: "storefront-renderer",enabledBetaFlags: ["d5bdd5d0","656605ce"],webPixelsConfigList: [{"id":"1799225419","configuration":"{\"redditPixelId\":\"a2_frw7mbvnradd\",\"dataSharingType\":\"advanced\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"c9deaad0e417faf450b6c7118b308b19","type":"APP","apiClientId":304258285569,"privacyPurposes":["ANALYTICS","MARKETING"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_email","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized"},{"id":"1609269323","configuration":"{\"accountID\":\"facct_01kn4z8f7cw5aaeeg0ctb2fqtt\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"b512ad51efb2fbd80a0b3630d2f185b8","type":"APP","apiClientId":61620781057,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized"},{"id":"1601601611","configuration":"{\"eventKey\":\"f796d853-c232-43a9-bece-7ddb15652a83\",\"name\":\"bluemercury-inc - Axon Pixel\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"74f185d0a06544db46d8aa284984510d","type":"APP","apiClientId":256560922625,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized"},{"id":"1552777291","configuration":"{\"accountID\":\"shopify-28301852747\", \"endpoint\":\"https:\/\/connect.nosto.com\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"85848493c2a1c7a4bbf22728b6f9f31f","type":"APP","apiClientId":272825,"privacyPurposes":["ANALYTICS","MARKETING"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_email","read_customer_name","read_customer_personal_data"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized"},{"id":"338853963","configuration":"{\"env\":\"prod\"}","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"8a9a175b11d15038a70fe78d09c59720","type":"APP","apiClientId":3977633,"privacyPurposes":["ANALYTICS","MARKETING"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized","enabledFlags":["9a3ed68a"]},{"id":"308084811","configuration":"{\"swymApiEndpoint\":\"https:\/\/swymstore-v3premium-01.swymrelay.com\",\"swymTier\":\"v3premium-01\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"5b6f6917e306bc7f24523662663331c0","type":"APP","apiClientId":1350849,"privacyPurposes":["ANALYTICS","MARKETING","PREFERENCES"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized"},{"id":"222462027","configuration":"{\"pixelCode\":\"CJP0JNJC77UEBV3SQURG\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"22e92c2ad45662f435e4801458fb78cc","type":"APP","apiClientId":4383523,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized"},{"id":"101056587","configuration":"{\"pixel_id\":\"555043834663949\",\"pixel_type\":\"facebook_pixel\",\"metaapp_system_user_token\":\"-\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"abff2a8add143ccb04deb20f0ebd74a9","type":"APP","apiClientId":2329312,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized","enabledFlags":["9a3ed68a"]},{"id":"14680139","eventPayloadVersion":"1","runtimeContext":"LAX","scriptVersion":"9","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"name":"Adobe Analytics"},{"id":"40894539","eventPayloadVersion":"1","runtimeContext":"LAX","scriptVersion":"1","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"name":"Attentive Tag"},{"id":"19234891","eventPayloadVersion":"1","runtimeContext":"LAX","scriptVersion":"1","type":"CUSTOM","privacyPurposes":[],"name":"Bambuser"},{"id":"19267659","eventPayloadVersion":"1","runtimeContext":"LAX","scriptVersion":"1","type":"CUSTOM","privacyPurposes":[],"name":"BazaarVoice"},{"id":"19300427","eventPayloadVersion":"1","runtimeContext":"LAX","scriptVersion":"2","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"name":"Functional"},{"id":"19333195","eventPayloadVersion":"1","runtimeContext":"LAX","scriptVersion":"1","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"name":"Google Retail"},{"id":"34603083","eventPayloadVersion":"1","runtimeContext":"LAX","scriptVersion":"1","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"name":"Hue"},{"id":"15368267","eventPayloadVersion":"1","runtimeContext":"LAX","scriptVersion":"1","type":"CUSTOM","privacyPurposes":[],"name":"Listrak"},{"id":"29851723","eventPayloadVersion":"1","runtimeContext":"LAX","scriptVersion":"1","type":"CUSTOM","privacyPurposes":["ANALYTICS"],"name":"Match My Makeup"},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0510","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0510","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: true,initData: {"shop":{"name":"Bluemercury","paymentSettings":{"currencyCode":"USD"},"myshopifyDomain":"bluemercury-inc.myshopify.com","countryCode":"US","storefrontUrl":"https:\/\/bluemercury.com"},"customer":null,"cart":{"cost":{"totalAmount":{"amount":3124.98,"currencyCode":"USD"}},"lines":[{"cost":{"totalAmount":{"amount":336.0,"currencyCode":"USD"}},"merchandise":{"price":{"amount":112.0,"currencyCode":"USD"},"product":{"title":"Bestseller Candle Duo","vendor":"Lafco","id":"7399944618059","untranslatedTitle":"Bestseller Candle Duo","url":"\/products\/bestseller-candle-duo","type":"Bundle"},"id":"41593411272779","image":{"src":"\/\/bluemercury.com\/cdn\/shop\/files\/global_images.jpg?v=1755635285"},"sku":"MISS-SKU-41593411272779","title":"Default Title","untranslatedTitle":"Default Title"},"quantity":3},{"cost":{"totalAmount":{"amount":185.0,"currencyCode":"USD"}},"merchandise":{"price":{"amount":185.0,"currencyCode":"USD"},"product":{"title":"C E Ferulic","vendor":"SkinCeuticals","id":"4585128984651","untranslatedTitle":"C E Ferulic","url":"\/products\/skinceuticals-c-e-ferulic","type":"Face Serums"},"id":"32352032096331","image":{"src":"\/\/bluemercury.com\/cdn\/shop\/files\/variant_images-size-DefaultTitle-635494263008-1.jpg?v=1781791334"},"sku":"3549426300","title":"Default Title","untranslatedTitle":"Default Title"},"quantity":1},{"cost":{"totalAmount":{"amount":109.99,"currencyCode":"USD"}},"merchandise":{"price":{"amount":109.99,"currencyCode":"USD"},"product":{"title":"SleepMask","vendor":"Therabody","id":"7679104057419","untranslatedTitle":"SleepMask","url":"\/products\/therabody-sleepmask","type":"Sleep Mask"},"id":"42352130490443","image":{"src":"\/\/bluemercury.com\/cdn\/shop\/files\/global_images-840295403342-1.jpg?v=1776447725"},"sku":"119151754","title":"Default Title","untranslatedTitle":"Default Title"},"quantity":1},{"cost":{"totalAmount":{"amount":75.0,"currencyCode":"USD"}},"merchandise":{"price":{"amount":75.0,"currencyCode":"USD"},"product":{"title":"Endorphin Oil","vendor":"HigherDose","id":"7335680245835","untranslatedTitle":"Endorphin Oil","url":"\/products\/higherdose-endorphin-oil","type":"Body Oils"},"id":"41383658324043","image":{"src":"\/\/bluemercury.com\/cdn\/shop\/files\/global_images-850049532525-1.jpg?v=1761498482"},"sku":"5004953236","title":"Default Title","untranslatedTitle":"Default Title"},"quantity":1},{"cost":{"totalAmount":{"amount":649.99,"currencyCode":"USD"}},"merchandise":{"price":{"amount":649.99,"currencyCode":"USD"},"product":{"title":"Airwrap i.d. Multi-Styler and Dryer Straight+Wavy","vendor":"Dyson","id":"7307005395019","untranslatedTitle":"Airwrap i.d. Multi-Styler and Dryer Straight+Wavy","url":"\/products\/dyson-airwrap-id-multi-styler-and-dryer-straight-wavy","type":"Hair Dryers"},"id":"41711287533643","image":{"src":"\/\/bluemercury.com\/cdn\/shop\/files\/variant_images-size-CeramicPink-885609040059-1.jpg?v=1777575663"},"sku":"113601558","title":"Amber Silk","untranslatedTitle":"Amber Silk"},"quantity":1},{"cost":{"totalAmount":{"amount":26.0,"currencyCode":"USD"}},"merchandise":{"price":{"amount":26.0,"currencyCode":"USD"},"product":{"title":"Eclipse Volumizing and Curling Mascara","vendor":"Lune+Aster","id":"4587056463947","untranslatedTitle":"Eclipse Volumizing and Curling Mascara","url":"\/products\/lune-aster-eclipse-volumizing-curling-mascara","type":"Mascara"},"id":"40681759506507","image":{"src":"\/\/bluemercury.com\/cdn\/shop\/files\/variant_images-size-Black-814309021556-1.jpg?v=1773846011"},"sku":"6462518872","title":"Black","untranslatedTitle":"Black"},"quantity":1},{"cost":{"totalAmount":{"amount":35.0,"currencyCode":"USD"}},"merchandise":{"price":{"amount":35.0,"currencyCode":"USD"},"product":{"title":"Satin Kajal Liner","vendor":"Victoria Beckham Beauty","id":"7202582462539","untranslatedTitle":"Satin Kajal Liner","url":"\/products\/victoria-beckham-beauty-satin-kajal-liner","type":"Eyeliners"},"id":"40996212342859","image":{"src":"\/\/bluemercury.com\/cdn\/shop\/files\/variant_images-size-Bronze-810021280004-1.jpg?v=1787111267"},"sku":"1002128000","title":"Bronze","untranslatedTitle":"Bronze"},"quantity":1},{"cost":{"totalAmount":{"amount":920.0,"currencyCode":"USD"}},"merchandise":{"price":{"amount":230.0,"currencyCode":"USD"},"product":{"title":"Laser \u0026 Treatment Support Duo","vendor":"SkinCeuticals","id":"7406569455691","untranslatedTitle":"Laser \u0026 Treatment Support Duo","url":"\/products\/skinceuticals-laser-treatment-support-duo","type":"Bundle"},"id":"41625729695819","image":{"src":"\/\/bluemercury.com\/cdn\/shop\/files\/global_images_skinc__1.jpg?v=1758294066"},"sku":"MISS-SKU-41625729695819","title":"Default Title","untranslatedTitle":"Default Title"},"quantity":4},{"cost":{"totalAmount":{"amount":42.0,"currencyCode":"USD"}},"merchandise":{"price":{"amount":42.0,"currencyCode":"USD"},"product":{"title":"Sculpted Face Stick","vendor":"Ogee","id":"7707798044747","untranslatedTitle":"Sculpted Face Stick","url":"\/products\/ogee-sculpted-face-stick","type":"Blush"},"id":"42420376961099","image":{"src":"\/\/bluemercury.com\/cdn\/shop\/files\/variant_images-size-Opal-810168151083-1.jpg?v=1785882127"},"sku":"5531200840","title":"Obsidian","untranslatedTitle":"Obsidian"},"quantity":1},{"cost":{"totalAmount":{"amount":648.0,"currencyCode":"USD"}},"merchandise":{"price":{"amount":72.0,"currencyCode":"USD"},"product":{"title":"PowerGlow Peel","vendor":"M-61","id":"4436560674891","untranslatedTitle":"PowerGlow Peel","url":"\/products\/m61-powerglow-peel","type":"Face Peels"},"id":"31691401265227","image":{"src":"\/\/bluemercury.com\/cdn\/shop\/files\/variant_images-size-30treatments-817237011774-2_1ec657ba-1fd9-48fd-ba85-a5c1a6e95d3a.jpg?v=1776106385"},"sku":"1723701177","title":"30 treatments","untranslatedTitle":"30 treatments"},"quantity":9},{"cost":{"totalAmount":{"amount":45.0,"currencyCode":"USD"}},"merchandise":{"price":{"amount":45.0,"currencyCode":"USD"},"product":{"title":"UV Clear Broad-Spectrum SPF 46","vendor":"EltaMD","id":"6737056366667","untranslatedTitle":"UV Clear Broad-Spectrum SPF 46","url":"\/products\/elta-md-uv-clear-broad-spectrum-spf-46","type":"Face Sunscreens"},"id":"39795496288331","image":{"src":"\/\/bluemercury.com\/cdn\/shop\/files\/variant_images-size-17oz-390205025008-1.jpg?v=1773846067"},"sku":"9020502500","title":"1.7 oz","untranslatedTitle":"1.7 oz"},"quantity":1},{"cost":{"totalAmount":{"amount":27.0,"currencyCode":"USD"}},"merchandise":{"price":{"amount":27.0,"currencyCode":"USD"},"product":{"title":"Beard Oil","vendor":"Murdock London","id":"7345575395403","untranslatedTitle":"Beard Oil","url":"\/products\/murdock-london-beard-oil","type":"Beard Oils"},"id":"41410801074251","image":{"src":"\/\/bluemercury.com\/cdn\/shop\/files\/global_images-5060470551711-1.jpg?v=1771365673"},"sku":"105550439","title":"Default Title","untranslatedTitle":"Default Title"},"quantity":1},{"cost":{"totalAmount":{"amount":26.0,"currencyCode":"USD"}},"merchandise":{"price":{"amount":26.0,"currencyCode":"USD"},"product":{"title":"Eclipse Volumizing and Curling Mascara","vendor":"Lune+Aster","id":"4587056463947","untranslatedTitle":"Eclipse Volumizing and Curling Mascara","url":"\/products\/lune-aster-eclipse-volumizing-curling-mascara","type":"Mascara"},"id":"40681759539275","image":{"src":"\/\/bluemercury.com\/cdn\/shop\/files\/variant_images-size-Brown-814309023680-5.jpg?v=1773846013"},"sku":"1430902368","title":"Brown","untranslatedTitle":"Brown"},"quantity":1}],"totalQuantity":26,"attributes":[{"key":"originalSubtotalAmount","value":"3275.99"}],"id":"hWN54mTFlQEC0VWQlDXvzcwM"},"checkout":null,"productVariants":[],"products":[{"id":"7993850462283","handle":"oribe-hair-alchemy-bond-repair-leave-in-treatment","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42884610752587","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"7904009420875","handle":"charlotte-tilbury-exagger-eyes-waterproof-eyeshadow-stick","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42723548856395","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"7184864968779","handle":"solara-suncare-good-karma-dry-oil-mineral-sunscreen-spf-30","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"40943332261963","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"7998381981771","handle":"obagi-nu-gen-cellular-renewal-serum","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42893353386059","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8000612106315","handle":"m-61-the-double-cleansing-routine","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42899047907403","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"7190797713483","handle":"ogee-elixir-bakuchiol","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"40962319286347","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"7923285786699","handle":"111skin-the-black-diamond-ritual","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42747360510027","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8001626112075","handle":"rms-beauty-kakadu-body-butter","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42902992355403","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8001637122123","handle":"sisley-paris-sisleya-lintegral-anti-age-duo","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42903074013259","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8001630339147","handle":"rms-beauty-kakadu-beauty-body-oil","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42903011655755","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"7936820609099","handle":"hourglass-phantom-blur-balm","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42762608836683","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"7923413155915","handle":"111skin-the-restorative-duo","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42747489058891","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"7923440386123","handle":"111skin-the-essential-repair-duo","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42747516387403","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8001582694475","handle":"la-mer-the-lip-treatment-1","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42902934978635","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"7351830872139","handle":"byredo-summer-rain-scented-candle","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42908809494603","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8006957301835","handle":"u-beauty-the-mantle-cleansing-balm","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42920968028235","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8003302883403","handle":"r-co-sun-catcher-power-c-styling-butter","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42911225380939","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8000102531147","handle":"dermalogica-phyto-nature-e2","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42898318000203","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8008091893835","handle":"the-light-salon-boost-nano-dermabrasion-and-nano-infusion-pen","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42925183336523","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8008088485963","handle":"the-light-salon-nano-dermabrasion-replacement-tips","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42925178421323","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8019968524363","handle":"virtue-healing-gloss","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42942391222347","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8019974488139","handle":"christophe-robin-detangling-hairbrush","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42942402232395","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8023939907659","handle":"angela-cagila-skincare-the-cleansing-and-renewal-duo","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42950375735371","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"7288016568395","handle":"angela-cagila-skincare-souffle-moisturizer","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"41258364600395","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8023921852491","handle":"christophe-robin-travel-hairbrush","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42950246498379","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8023948951627","handle":"necessaire-the-body-ritual","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42950406996043","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8023928799307","handle":"christophe-robin-pre-curved-blowdry-hairbrush","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42950274646091","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8025323470923","handle":"ogee-sculpted-skin-perfecting-powder-1","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42954175479883","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8026250707019","handle":"christophe-robin-color-shield-cleansing-mask-with-camu-camu-berries","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42955866767435","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8025361416267","handle":"laura-mercier-roseglow-caviar-stick-eye-color-1","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42954225713227","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8026606108747","handle":"mara-aura-cleanse-foaming-gel-cleanse","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42956293865547","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8026671153227","handle":"mara-pearl-peptide-glaze-hydrating-facial-essence","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42956372312139","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8025111527499","handle":"jolie-the-jolie-filtered-showerhead-1","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42953869066315","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8025319112779","handle":"neen-pretty-shady-1","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42954178854987","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8027759902795","handle":"nannette-de-gaspe-the-replenishing-ritual","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42958453899339","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"7322012221515","handle":"111skin-deep-cleansing-oil","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42958866776139","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8029906894923","handle":"exponent-hydroglow-oxygen-ionizer-hyaluronic-acid-refill","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42963999195211","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8033825325131","handle":"atwater-skin-armor-facial-cleansing-gel","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42979286450251","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8033937457227","handle":"chantecaille-lip-veil-lion-collection","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42980505026635","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8033922646091","handle":"chantecaille-luminescent-eye-shade-lion-collection","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42980456136779","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8033937915979","handle":"chantecaille-cheek-shade-lion-pride","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42980505550923","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8035154755659","handle":"nannette-de-gaspe-the-baume-noir-face-eye-duo","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42986762829899","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8038504005707","handle":"nanette-de-gaspe-the-refined-radiance-ritual","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42996853309515","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"7407159902283","handle":"nest-pumpkin-chai-candle","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"41629677715531","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8038477299787","handle":"necessaire-the-moisture-shampoo","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42996770078795","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8038481985611","handle":"necessaire-the-body-wipe-eucalyptus","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42996776927307","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"7479825662027","handle":"angela-caglia-skincare-the-cell-forte-duo","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"41893839339595","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8027834056779","handle":"111skin-repair-day-cream-nac-y","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42958808023115","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8038471663691","handle":"necessaire-the-moisture-conditioner","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42996763721803","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8038536675403","handle":"sisley-paris-the-essentials-discovery-set","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42996942602315","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8038551158859","handle":"sisley-paris-sisleyum-protective-shaving-care","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42997105983563","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"4585128984651","handle":"skinceuticals-c-e-ferulic","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"32352032096331","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"7890163826763","handle":"victoria-beckham-beauty-blush-stylus","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42681427099723","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"7160837636171","handle":"parfums-de-marly-delina-eau-de-parfum","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"40870500433995","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"6959296643147","handle":"creed-aventus","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"40404890910795","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"4436560674891","handle":"m61-powerglow-peel","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"31691401232459","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"4586730324043","handle":"lafco-wick-trimmer-and-snuffer","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"32363094114379","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"4587056463947","handle":"lune-aster-eclipse-volumizing-curling-mascara","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"40681759506507","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"4587064721483","handle":"skinceuticals-physical-fusion-uv-defense-spf-50","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"32365669646411","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"6737056366667","handle":"elta-md-uv-clear-broad-spectrum-spf-46","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"39795496288331","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"6791552139339","handle":"lafco-feu-de-bois-candle","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"39908609359947","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"7202582462539","handle":"victoria-beckham-beauty-satin-kajal-liner","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"40996212342859","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"7307005395019","handle":"dyson-airwrap-id-multi-styler-and-dryer-straight-wavy","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"41711287533643","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"7335680245835","handle":"higherdose-endorphin-oil","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"41383658324043","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"7345575395403","handle":"murdock-london-beard-oil","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"41410801074251","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"7381993488459","handle":"lafco-bluemercury-spa-candle","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"41527227580491","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"7399944618059","handle":"bestseller-candle-duo","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"41593411272779","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"7406569455691","handle":"skinceuticals-laser-treatment-support-duo","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"41625729695819","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"7679104057419","handle":"therabody-sleepmask","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42352130490443","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"7707798044747","handle":"ogee-sculpted-face-stick","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"42420377026635","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]}],"purchasingCompany":null},},"https:https://bluemercury.com/cdn","2d9dfbe8w1156b718pbb247b16m64115e31",{"modern":"","legacy":""},{"trekkieShim":true,"agentContext":true,"apiClientId":"580111","facebookCapiEnabled":"true","themeId":"130530213963","themePublished":"false","eventMetadataId":"d29f51a2-c34d-444b-9477-52848c586126","pageType":"home","shopId":"28301852747","storefrontBaseUrl":"https:\/\/bluemercury.com","extensionBaseUrl":"https:\/\/extensions.shopifycdn.com\/cdn\/shopifycloud\/web-pixels-manager","surface":"storefront-renderer","enabledBetaFlags":"[\"d5bdd5d0\", \"656605ce\"]","isMerchantRequest":"true","hashVersion":"2d9dfbe8w1156b718pbb247b16m64115e31","publish":"custom","events":"[[\"page_viewed\",{}]]"});})();</script><script>
+  window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+  window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+  window.ShopifyAnalytics.meta.currency = 'USD';
+  var meta = {"page":{"pageType":"home","requestId":"3391101c-8fb5-4530-baa3-f92a35a6ada6-1787244079"}};
+  for (var attr in meta) {
+    window.ShopifyAnalytics.meta[attr] = meta[attr];
+  }
+</script>
+<script class="analytics">
+  (function () {
+    var customDocumentWrite = function(content) {
+      var jquery = null;
 
+      if (window.jQuery) {
+        jquery = window.jQuery;
+      } else if (window.Checkout && window.Checkout.$) {
+        jquery = window.Checkout.$;
+      }
 
+      if (jquery) {
+        jquery('body').append(content);
+      }
+    };
 
+    var hasLoggedConversion = function(token) {
+      if (token) {
+        return document.cookie.indexOf('loggedConversion=' + token) !== -1;
+      }
+      return false;
+    }
 
+    var setCookieIfConversion = function(token) {
+      if (token) {
+        var twoMonthsFromNow = new Date(Date.now());
+        twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
 
+        document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;
+      }
+    }
 
+    var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
+    window.ShopifyAnalytics.lib.trekkie = window.trekkie;
+    if (trekkie.integrations) {
+      return;
+    }
+    trekkie.methods = [
+      'identify',
+      'page',
+      'ready',
+      'track',
+      'trackForm',
+      'trackLink'
+    ];
+    trekkie.factory = function(method) {
+      return function() {
+        var args = Array.prototype.slice.call(arguments);
+        args.unshift(method);
+        trekkie.push(args);
+        if (window.__TREKKIE_SHIM_QUEUE && (method == 'track' || method == 'page')) {
+          try {
+            window.__TREKKIE_SHIM_QUEUE.push({
+              from: 'trekkie-stub',
+              method: method,
+              args: args.slice(1)
+            });
+          } catch (e) {
+            // no-op
+          }
+        }
+        return trekkie;
+      };
+    };
+    for (var i = 0; i < trekkie.methods.length; i++) {
+      var key = trekkie.methods[i];
+      trekkie[key] = trekkie.factory(key);
+    }
+    trekkie.load = function(config) {
+      trekkie.config = config || {};
+      trekkie.config.initialDocumentCookie = document.cookie;
+      var first = document.getElementsByTagName('script')[0];
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.onerror = function(e) {
+  var scriptFallback = document.createElement('script');
+  scriptFallback.type = 'text/javascript';
+  scriptFallback.onerror = function(error) {
+          var Monorail = {
+      produce: function produce(monorailDomain, schemaId, payload) {
+        var currentMs = new Date().getTime();
+        var event = {
+          schema_id: schemaId,
+          payload: payload,
+          metadata: {
+            event_created_at_ms: currentMs,
+            event_sent_at_ms: currentMs
+          }
+        };
+        return Monorail.sendRequest("https://" + monorailDomain + "/v1/produce", JSON.stringify(event));
+      },
+      sendRequest: function sendRequest(endpointUrl, payload) {
+        // Try the sendBeacon API
+        if (window && window.navigator && typeof window.navigator.sendBeacon === 'function' && typeof window.Blob === 'function' && !Monorail.isIos12()) {
+          var blobData = new window.Blob([payload], {
+            type: 'text/plain'
+          });
+
+          if (window.navigator.sendBeacon(endpointUrl, blobData)) {
+            return true;
+          } // sendBeacon was not successful
+
+        } // XHR beacon
+
+        var xhr = new XMLHttpRequest();
+
+        try {
+          xhr.open('POST', endpointUrl);
+          xhr.setRequestHeader('Content-Type', 'text/plain');
+          xhr.send(payload);
+        } catch (e) {
+          console.log(e);
+        }
+
+        return false;
+      },
+      isIos12: function isIos12() {
+        return window.navigator.userAgent.lastIndexOf('iPhone; CPU iPhone OS 12_') !== -1 || window.navigator.userAgent.lastIndexOf('iPad; CPU OS 12_') !== -1;
+      }
+    };
+    Monorail.produce('monorail-edge.shopifysvc.com',
+      'trekkie_storefront_load_errors/1.1',
+      {shop_id: 28301852747,
+      theme_id: 130530213963,
+      app_name: "storefront",
+      context_url: window.location.href,
+      source_url: "https://bluemercury.com/cdn/s/trekkie.storefront.7bcd7bb8195e24c65a61d69d69eb32392ed0d53f.min.js"});
+
+  };
+  scriptFallback.async = true;
+  scriptFallback.src = 'https://bluemercury.com/cdn/s/trekkie.storefront.7bcd7bb8195e24c65a61d69d69eb32392ed0d53f.min.js';
+  first.parentNode.insertBefore(scriptFallback, first);
+};
+script.async = true;
+script.src = 'https://bluemercury.com/cdn/s/trekkie.storefront.7bcd7bb8195e24c65a61d69d69eb32392ed0d53f.min.js';
+first.parentNode.insertBefore(script, first);
+
+    };
+    trekkie.load(
+      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":28301852747,"isMerchantRequest":true,"themeId":130530213963,"themeCityHash":"2523808121147170866","contentLanguage":"en","currency":"USD","eventMetadataId":"d29f51a2-c34d-444b-9477-52848c586126"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["f43e7f5e","b5387b81","d5bdd5d0"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":true,"source":"trekkie-storefront-renderer","apiClientId":580111}}
+    );
+
+    var loaded = false;
+    trekkie.ready(function() {
+      if (loaded) return;
+      loaded = true;
+
+      window.ShopifyAnalytics.lib = window.trekkie;
+
+      var originalDocumentWrite = document.write;
+      document.write = customDocumentWrite;
+      try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
+      document.write = originalDocumentWrite;
+
+      var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
+      var token = match? match[1]: undefined;
+      if (!hasLoggedConversion(token)) {
+        setCookieIfConversion(token);
+        
+      }
+    });
+
+    window.ShopifyAnalytics.lib.page(null,{"pageType":"home","requestId":"3391101c-8fb5-4530-baa3-f92a35a6ada6-1787244079","shopifyEmitted":true});
+
+    var eventsListenerScript = document.createElement('script');
+    eventsListenerScript.async = true;
+    eventsListenerScript.src = "https://bluemercury.com/cdn/shopifycloud/storefront/assets/shop_events_listener-4e26a9ce.js";
+    document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+})();</script>
+<script
+  defer
+  src="https:https://bluemercury.com/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.8.4.min.js"
+  data-application="storefront-renderer"
+  data-shop-id="28301852747"
+  data-render-region="gcp-us-east1"
+  data-page-type="index"
+  data-theme-instance-id="130530213963"
+  data-theme-name=""
+  data-theme-version=""
+  data-monorail-region="shop_domain"
+  data-resource-timing-sampling-rate="10"
+  data-shs="true"
+  data-shs-beacon="true"
+  data-shs-export-with-fetch="true"
+  data-shs-logs-sample-rate="1"
+  data-shs-beacon-endpoint="https:https://bluemercury.com/api/collect"
+></script>
+<meta name="shopify-y" content="fc2cfe2f-6443-4cfe-943e-0ebecb64d9cf"><meta name="shopify-s" content="ea14de46-5d92-4e99-b902-8ba4801cc3bf"><meta name="new-cookie-storage-activated" content="f"></head>
 
   <body class=" template-index">
     <a class="PageSkipLink u-visually-hidden" href="#main">Skip to content</a>
