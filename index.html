@@ -160,6 +160,89 @@
   <!-- Shoelace Web Components -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/themes/light.css" />
   <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/shoelace-autoloader.js"></script>
+  
+  <style>
+    /* Megamenu customizations */
+    .header__megamenu::part(overlay) {
+      display: none !important;
+    }
+    
+    .header__megamenu::part(panel) {
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .header__megamenu-wrapper {
+      padding: 2rem 0;
+      background: white;
+    }
+    
+    .header__megamenu-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .header__megamenu-column {
+      min-height: 100px;
+    }
+    
+    .header__megamenu-heading {
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      color: #2f394b;
+    }
+    
+    .header__megamenu-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .header__megamenu-links li {
+      margin-bottom: 0.5rem;
+    }
+    
+    .header__megamenu-links a {
+      color: #555;
+      text-decoration: none;
+      font-size: 0.875rem;
+      transition: color 0.2s;
+    }
+    
+    .header__megamenu-links a:hover {
+      color: #2f394b;
+    }
+    
+    .header__megamenu-promo {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+    
+    .header__megamenu-promo img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 0.5rem;
+      border-radius: 4px;
+    }
+    
+    .header__megamenu-promo-content h4 {
+      font-size: 0.875rem;
+      margin-bottom: 0.25rem;
+      color: #2f394b;
+    }
+    
+    .header__megamenu-promo-content .cta {
+      text-decoration: underline;
+      font-size: 0.875rem;
+      color: #2f394b;
+    }
+  </style>
 </head>
 <body>
 
@@ -2458,19 +2541,173 @@
   <script>
     // Initialize megamenu functionality
     document.addEventListener('DOMContentLoaded', () => {
-      // Handle desktop megamenu toggles
-      const megamenuToggles = document.querySelectorAll('[data-action="toggle-megamenu"]');
-      
-      megamenuToggles.forEach(toggle => {
-        toggle.addEventListener('click', (e) => {
-          e.preventDefault();
-          const drawerId = toggle.getAttribute('aria-controls');
-          const drawer = document.getElementById(drawerId);
+      // Populate megamenu from JSON data
+      const sectionData = document.querySelector('script[data-section-data]');
+      if (sectionData) {
+        try {
+          const data = JSON.parse(sectionData.textContent);
+          const { contentBlocks = [], megamenuLinkBlocks = [] } = data;
           
-          if (drawer) {
-            drawer.show();
-          }
-        });
+          // Process content blocks (promotional images)
+          contentBlocks.forEach(block => {
+            const { settings, image } = block;
+            if (!settings || !settings.megamenu_placement) return;
+            
+            const navTree = settings.megamenu_placement;
+            const column = settings.megamenu_column;
+            const columnSpan = settings.megamenu_column_span || '1';
+            
+            // Find the megamenu drawer for this nav tree
+            const drawers = document.querySelectorAll(`sl-drawer[data-title-key]`);
+            drawers.forEach(drawer => {
+              const titleKey = drawer.getAttribute('data-title-key');
+              if (titleKey && titleKey.toLowerCase() === navTree.toLowerCase()) {
+                const targetColumn = drawer.querySelector(`[data-column="${column}"]`);
+                if (targetColumn && image) {
+                  const contentBlock = document.createElement('div');
+                  contentBlock.className = 'header__megamenu-content-block';
+                  contentBlock.innerHTML = `
+                    <a href="${settings.url || '#'}" class="header__megamenu-promo">
+                      <img src="${image.src}" alt="${settings.title || ''}" loading="lazy" width="200" height="200">
+                      <div class="header__megamenu-promo-content">
+                        <h4>${settings.title || ''}</h4>
+                        ${settings.cta_text ? `<span class="cta">${settings.cta_text}</span>` : ''}
+                      </div>
+                    </a>
+                  `;
+                  targetColumn.appendChild(contentBlock);
+                }
+              }
+            });
+          });
+          
+          // Process link blocks (navigation lists)
+          megamenuLinkBlocks.forEach(block => {
+            const { settings, links = [] } = block;
+            if (!settings || !settings.nav_tree) return;
+            
+            const navTree = settings.nav_tree;
+            const column = settings.column;
+            
+            // Find the megamenu drawer for this nav tree
+            const drawers = document.querySelectorAll(`sl-drawer[data-title-key]`);
+            drawers.forEach(drawer => {
+              const titleKey = drawer.getAttribute('data-title-key');
+              if (titleKey && titleKey.toLowerCase() === navTree.toLowerCase()) {
+                const targetColumn = drawer.querySelector(`[data-column="${column}"]`);
+                if (targetColumn) {
+                  const linkBlock = document.createElement('div');
+                  linkBlock.className = 'header__megamenu-link-block';
+                  
+                  let html = '';
+                  if (settings.title) {
+                    html += `<h3 class="header__megamenu-heading">${settings.title}</h3>`;
+                  }
+                  
+                  if (links.length > 0) {
+                    html += '<ul class="header__megamenu-links">';
+                    links.forEach(link => {
+                      html += `<li><a href="${link.link}">${link.title}</a></li>`;
+                    });
+                    html += '</ul>';
+                  }
+                  
+                  linkBlock.innerHTML = html;
+                  targetColumn.appendChild(linkBlock);
+                }
+              }
+            });
+          });
+        } catch (e) {
+          console.error('Error parsing megamenu data:', e);
+        }
+      }
+      
+      // Detect if desktop or mobile
+      const isDesktop = () => window.innerWidth >= 1024;
+      
+      let currentOpenDrawer = null;
+      let hoverTimeout = null;
+      
+      // Get all megamenu toggles and their drawers
+      const megamenuToggles = document.querySelectorAll('[data-action="toggle-megamenu"]');
+      const allMegamenuDrawers = document.querySelectorAll('.header__megamenu');
+      
+      // Function to open a drawer
+      function openDrawer(drawer) {
+        if (currentOpenDrawer && currentOpenDrawer !== drawer) {
+          currentOpenDrawer.hide();
+        }
+        drawer.show();
+        currentOpenDrawer = drawer;
+      }
+      
+      // Function to close all drawers
+      function closeAllDrawers() {
+        allMegamenuDrawers.forEach(drawer => drawer.hide());
+        currentOpenDrawer = null;
+      }
+      
+      // Handle megamenu toggles
+      megamenuToggles.forEach(toggle => {
+        const drawerId = toggle.getAttribute('aria-controls');
+        const drawer = document.getElementById(drawerId);
+        
+        if (!drawer) return;
+        
+        if (isDesktop()) {
+          // Desktop: Use hover
+          const parentLi = toggle.closest('li');
+          
+          parentLi.addEventListener('mouseenter', () => {
+            clearTimeout(hoverTimeout);
+            openDrawer(drawer);
+          });
+          
+          parentLi.addEventListener('mouseleave', () => {
+            hoverTimeout = setTimeout(() => {
+              if (!drawer.matches(':hover')) {
+                drawer.hide();
+                if (currentOpenDrawer === drawer) {
+                  currentOpenDrawer = null;
+                }
+              }
+            }, 100);
+          });
+          
+          // Keep drawer open when hovering over it
+          drawer.addEventListener('mouseenter', () => {
+            clearTimeout(hoverTimeout);
+          });
+          
+          drawer.addEventListener('mouseleave', () => {
+            hoverTimeout = setTimeout(() => {
+              drawer.hide();
+              if (currentOpenDrawer === drawer) {
+                currentOpenDrawer = null;
+              }
+            }, 100);
+          });
+          
+          // Prevent default click behavior on desktop
+          toggle.addEventListener('click', (e) => {
+            e.preventDefault();
+          });
+        } else {
+          // Mobile: Use click
+          toggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            openDrawer(drawer);
+          });
+        }
+      });
+      
+      // Close drawers when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('.header__megamenu') && 
+            !e.target.closest('[data-action="toggle-megamenu"]')) {
+          closeAllDrawers();
+        }
       });
 
       // Handle mobile sidebar toggle
