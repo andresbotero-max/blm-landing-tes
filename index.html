@@ -2455,5 +2455,51 @@
     <p>🦅 Birds of North America Field Guide © 2026 | All bird emojis for educational purposes</p>
   </footer>
 
+  <script>
+    // Initialize megamenu functionality
+    document.addEventListener('DOMContentLoaded', () => {
+      // Handle desktop megamenu toggles
+      const megamenuToggles = document.querySelectorAll('[data-action="toggle-megamenu"]');
+      
+      megamenuToggles.forEach(toggle => {
+        toggle.addEventListener('click', (e) => {
+          e.preventDefault();
+          const drawerId = toggle.getAttribute('aria-controls');
+          const drawer = document.getElementById(drawerId);
+          
+          if (drawer) {
+            drawer.show();
+          }
+        });
+      });
+
+      // Handle mobile sidebar toggle
+      const sidebarToggle = document.querySelector('[data-action="toggle-sidebar"]');
+      const sidebarDrawer = document.querySelector('.header__nav-drawer--level-1');
+      
+      if (sidebarToggle && sidebarDrawer) {
+        sidebarToggle.addEventListener('click', (e) => {
+          e.preventDefault();
+          sidebarDrawer.show();
+        });
+      }
+
+      // Handle sub-nav toggles in mobile menu
+      const subNavToggles = document.querySelectorAll('[data-action="toggle-sub-nav"]');
+      
+      subNavToggles.forEach(toggle => {
+        toggle.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = toggle.getAttribute('aria-controls');
+          const targetDrawer = document.getElementById(targetId);
+          
+          if (targetDrawer) {
+            targetDrawer.show();
+          }
+        });
+      });
+    });
+  </script>
+
 </body>
 </html>
