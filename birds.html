@@ -100,10 +100,17 @@
             font-style: italic;
             font-display: swap;
         }
-        #header-search-input-trigger {
+        .header__search-input {
             font-size: var(--16px) !important;
             letter-spacing: normal !important;
             line-height: normal !important;
+        }
+        @media screen and (max-width: 1024px) {
+            .header__search-input {
+                width: 100%;
+                padding: 11px 30px 11px 10px;
+                font-size: var(--14px) !important;
+            }
         }
         .top-bar__link {
           line-height: normal !important;
